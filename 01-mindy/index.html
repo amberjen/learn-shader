@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Shaders - 01 Mindfulness</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <h1 class="logo">Mindy</h1>
+
+    <div class="content">
+      <canvas width="450px" height="450px"></canvas>
+      <h3 class="left">Let the<br />mind</h3>
+      <h3 class="right">wander</h3>
+    </div>
+
+  </main>
+
+  <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+
+  <script src="./shader.js"></script>
+
+  <script>
+    (function() {
+      let canvas = document.querySelector('canvas');
+      let sandbox = new GlslCanvas(canvas);
+
+      sandbox.load(frag);
+      sandbox.setUniform('displacement1', 'https://slow-breath.superhi.com/displacement4.png');
+
+    })();
+  </script>
+
+</body>
+</html>
