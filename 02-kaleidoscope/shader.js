@@ -6,7 +6,7 @@ const frag = `
 precision highp float;
 #endif
 
-#define SEGMENTS 24.0
+#define SEGMENTS 12.0
 #define PI 3.141592653589
 
 uniform float u_time;
@@ -43,7 +43,7 @@ void main(void)
         angle = 1.0 - fract(angle);
     }
     
-    angle += u_time * 0.5;
+    angle += u_time * 0.25;
     angle += mouse.y;
     
     // Unsquash segment
