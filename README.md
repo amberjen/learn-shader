@@ -10,5 +10,7 @@
 <img src="./screenshots/02-kaleidoscope.gif" width="560" />
 
 
-### 03 ?
+### 03 Dreamy Texture
+
+<img src="./screenshots/03-dreamy-texture.gif" width="560" />
 
