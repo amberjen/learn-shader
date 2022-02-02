@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W Records</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <h1>
+    <img src="./logo.svg" alt="Logo">
+  </h1>
+  
+  <main>
+    <section class="section-canvas">
+      <canvas></canvas>
+    </section>
+    <section class="section-records">
+      
+      <p class="cart">Cart (0)</p>
+
+      <!-- #1 -->
+      <div class="record">
+        <p class="record-artist">Airstrip Train </p>
+        <h2 class="record-title">Voice of the Heroes</h2>
+        <p class="record-type">Vinyl LP</p>
+        
+        <p class="record-price">
+          $27.50
+          <span class="original"><s>$31.98</s></span>
+        </p>
+        <button class="btn-add">Add to Cart</button>
+        <button class="btn-buy">Buy It Now</button>
+      </div>
+
+      <!-- #2 -->
+      <div class="record">
+        <p class="record-artist">Burnings Pod </p>
+        <h2 class="record-title">So We Won't Forget</h2>
+        <p class="record-type">Colored Vinyl</p>
+        
+        <p class="record-price">
+          $19.36
+          <span class="original"><s>$22.90</s></span>
+        </p>
+        <button class="btn-soldOut">Sold Out</button>
+      </div>
+
+      <!-- #3 -->
+      <div class="record">
+        <p class="record-artist">Martyrs Evaporation </p>
+        <h2 class="record-title">Lows and Highs</h2>
+        <p class="record-type">Box Set</p>
+        
+        <p class="record-price">
+          $9.44
+          <span class="original"><s>$10.90</s></span>
+        </p>
+        <button class="btn-add">Add to Cart</button>
+        <button class="btn-buy">Buy It Now</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- GLSL Canvas -->
+  <script type="text/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="./js/includes.js"></script>
+  <script src="./js/shader.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
