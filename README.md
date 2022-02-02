@@ -52,3 +52,6 @@ vec2 aspect(vec2 uv, float texture_ratio, float canvas_ratio) {
 ### 06 W Records
 
 <img src="./screenshots/06.gif" width="560" />
+
+## Credits
+- Images from [Unsplash](https://unsplash.com/)
