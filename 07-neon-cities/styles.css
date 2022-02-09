@@ -1,0 +1,75 @@
+/* ------- Minimal Reset ------- */
+html, body, p, ol, ul, li, hr, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: 400; font-family: inherit; color: inherit; }
+ol, ul { list-style: none; }
+button, input, select, textarea { margin: 0; font: inherit; color: inherit; }
+button { background: none; border: none; padding: 0; cursor: pointer; }
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+img, video { display: block; height: auto; max-width: 100%; }
+table { border-collapse: collapse; }
+td, th { padding: 0; text-align: left; font-weight: 400; }
+a { color: inherit; text-decoration: none; }  
+
+@font-face {
+  font-family: "Optician Sans";
+  src: url(./fonts/Optician-Sans.woff2) format('woff2'), url(./fonts/Optician-Sans.woff) format('woff');
+}
+
+body {
+  background: #0c0d0d;
+  color: #fff;
+  /* font-family: 'Format 1452', sans-serif; */
+  font-family: 'Optician Sans', sans-serif;
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+h1 { font-size: 2.5rem; }
+
+.location { font-size: 1.5rem; }
+
+.canvas-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas-wrapper canvas {
+  width: 60vmin;
+  height: 90vmin;
+  object-fit: cover;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 32px 32px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  padding: 8px 48px;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, .75);
+  transition: all .25s;
+}
